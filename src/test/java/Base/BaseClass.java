@@ -17,6 +17,9 @@ public class BaseClass {
     public String email ="arifiubat066@gmail.com";
     public String mobile ="01772921632";
     public String password ="12345678";
+    public String email2 ="arnobaurthohin3@gmail.com";
+    public String password2 ="123456789";
+    public String address ="Embankment Drive Road, Dhaka 1230";
 
 
 

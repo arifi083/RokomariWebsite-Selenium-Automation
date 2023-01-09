@@ -25,7 +25,7 @@ public class Signup {
     By phone = By.id("js-phone");
     By password = By.id("pwd");
     By captcha = By.id("g-recaptcha-response");
-    By createAccount = By.cssSelector("#accountForm>:nth-child(7)");
+    By createAccount = By.xpath("//form[@id='accountForm']//button[@type='submit']");
 
 
     public void signInButton(){
@@ -73,10 +73,12 @@ public class Signup {
 
     public void creatAccount(){
 
-       // wait =new WebDriverWait(driver, Duration.ofSeconds(60));
-        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#accountForm>:nth-child(7)"))).click();
-//        JavascriptExecutor executor = (JavascriptExecutor)driver;
-//        executor.executeScript("arguments[0].click();", element1);
+        wait =new WebDriverWait(driver, Duration.ofSeconds(60));
+        //wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//form[@id='accountForm']//button[@type='submit']"))).click();
+        WebElement element = driver.findElement(By.xpath("//form[@id='accountForm']//button[@type='submit']"));
+        JavascriptExecutor executor = (JavascriptExecutor)driver;
+        executor.executeScript("arguments[0].click();", element);
+
     }
 
 }

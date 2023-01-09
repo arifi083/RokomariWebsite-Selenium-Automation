@@ -30,8 +30,5 @@ public class TC_SignupTesst_001 extends BaseClass {
         Thread.sleep(5000);
 
 
-
-
-
     }
 }
