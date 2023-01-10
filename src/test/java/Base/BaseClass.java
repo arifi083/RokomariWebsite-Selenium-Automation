@@ -12,7 +12,7 @@ import java.time.Duration;
 public class BaseClass {
     public static WebDriver driver;
     WebDriverWait wait;
-    public String baseUrl="https://rahulshettyacademy.com/locatorspractice/";
+    public String baseUrl="https://www.rokomari.com/login";
     public String fullName ="atif";
     public String email ="arifiubat066@gmail.com";
     public String mobile ="01772921632";
@@ -20,6 +20,11 @@ public class BaseClass {
     public String email2 ="arnobaurthohin3@gmail.com";
     public String password2 ="123456789";
     public String address ="Embankment Drive Road, Dhaka 1230";
+
+    public String giftToPersonName ="Atif Hasan";
+    public String giftToPersonPhone ="01772921632";
+    public String giftToPersonAddress ="Village:Kritunia";
+    public String giftMsg ="I’m grateful for you because…";
 
 
 
